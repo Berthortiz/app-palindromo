@@ -1,0 +1,91 @@
+#root {
+
+  --border-color-green: rgb(60, 255, 0);
+  --border-color-red: rgb(255, 84, 84);
+
+  --border-width: 1px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  color: #878787;
+  background-color: #151515;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+h1.title-app {
+  font-size: 3em;
+  margin-bottom: 2em;
+  color: #cdcdcd;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  /* background-color: #484848; */
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+  /* background-color: #484848; */
+}
+
+.input-palindromo {
+  height: 2em;
+  padding: 0.8em 1.8em 0.8em 0.4em;
+  background-color: #ffffff00;
+  /* color: #7d7d7d; */
+  color: #f8cf00;
+
+  border: none;
+  border-bottom: 1px solid #484848;
+
+  /* border-radius: 5px; */
+}
+
+.input-palindromo:focus {
+  outline: none;
+}
+
+.input-palindromo:focus+.label-palindromo,
+.input-palindromo:not(:placeholder-shown)+.label-palindromo {
+  color: #2a2a2a;
+  transform: translateY(-1.7em);
+  opacity: 0;
+}
+
+.label-palindromo {
+  position: absolute;
+  left: 0.5em;
+  color: #484848;
+  background-color: #151515;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon-check {
+  position: absolute;
+  right: 0;
+  /* padding: 1em; */
+  /* width: 80px; */
+}
+
+/* .search-palindromo {} */
